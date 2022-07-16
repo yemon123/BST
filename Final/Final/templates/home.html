@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% csrf_token %}
+        <title>Mobile Banking System</title>
+        <h2>Welcome to our mobile banking system!</h2>
+        <h1>{{data}}</h1>
+        <form method="get" action="/login">
+            <button type="submit">Login</button>
+        </form>
+
+        <form method="get" action="/register">
+            <button type="submit">Register</button>
+        </form>
+
+        <form method="get" action="/deletion">
+            <button type="submit">Delete Account</button>
+        </form>
+
+        <form method="get" action="/searching">
+            <button type="submit">Search</button>
+        </form>
+
+
+</head>
+<body>
+
+</body>
+</html>
